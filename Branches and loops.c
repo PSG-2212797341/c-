@@ -483,3 +483,21 @@ int main()
     }
     return 0;
 } */
+
+//自动关机
+/* int main()
+{
+    char input[20] = {0};
+    system("shutdown -s -t 600");                 //shutdown：关机命令；-s -t 600：设置关机 时间关机 600秒后关机；
+    printf("您的电脑将在10分钟后关机,如果输入:我是猪,就会取消关机\n请输入:");
+    scanf("%s",&input);
+    while (1)
+    {
+        if (strcmp(input,"我是猪") == 0);
+        {
+            system("shutdown -a");              //-a：取消关机。
+            break;
+        }
+    }
+    return 0;
+} */
