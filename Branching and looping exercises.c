@@ -172,18 +172,18 @@
 } */
 
 //例10：写一个猜数字的小游戏。
-void load()
+/* void load()                                 //菜单函数
 {
     printf("菜单：\n");
     printf("0、退出游戏\n");
     printf("1、开始游戏\n");
 }
 
-void game()
+void game()                                 //猜数字函数
 {
     int ret = 0;
     int guess = 0;
-    ret = rand()%100+1;
+    ret = rand()%100+1;                         //使用rand()函数来给出随机数，但在使用前需要调用srand()函数，而%100+1是为了给出1-100之间的随机数。
     while (1)
     {
         printf("您觉得计算机给出的两位数是：");
@@ -207,9 +207,8 @@ void game()
 
 int main()
 {
-    
     int input = 0;
-    srand((unsigned int)time(NULL));
+    srand((unsigned int)time(NULL));                    //srand(int类型的数)函数：设置随机数的起点，若传入一个定值，则每一轮输出的随机数是一样的，如果传入一个变化的值，那么每一轮输出的随机数都是不一样的（为了得到变化的值，需要引用时间戳time():时间戳是一个变化的数，是指从1970-01-01--00：00:00到现在的时间有多少秒；而时间戳里面需要传入参数，这里不需要，所以就给为NULL）；
     do
     {
         load();
@@ -230,4 +229,4 @@ int main()
         printf("\n");
     } while (input);
     return 0;
-}
+} */
